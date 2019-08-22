@@ -1,5 +1,5 @@
 function hello(message, args){
-  message.reply("hello")
+  message.reply("hello");
 }
 
 cmdList = {'hello': hello}
