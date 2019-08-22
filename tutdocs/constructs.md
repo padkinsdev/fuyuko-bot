@@ -1,4 +1,4 @@
-# Writing for Fuyuko
+# Writing Commands for Fuyuko
 For `froggyhugger` / Docs v1.0.0
 ## Basic programming constructs:
 #### Overarching ideas:
