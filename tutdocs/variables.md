@@ -111,6 +111,7 @@ __Bool:__ A boolean value can be one of two possible values-true, or false.
 __String:__ A string is a series of characters. Strings are enclosed by `"`. `"This is a string"` is an example of a string.  
 __Null:__ A null type variable can only hold the value `null`.  
 __Undefined:__ An undefined variable is a variable that exists, but doesn't have a type. Really it's more of a *lack* of a type than an actual type.  
+__Array:__ An array is essentially a list of values, separated by commas. Array indexes start at 0, so to retrieve the fourth element of array `myArray`, one would use `myArray[3]` instead of `myArray[4]`.
 
 ### Why do variable types matter?
 Variable typing is much more important in languages such as C or Go, but it's an important concept because, for example, `"2" + "2"` is `"22"`, whereas `2 + 2` is `4` because `"2"` is a string, and `2` is a number. Sometimes you'll need to tell JavaScript to __coerce__ a variable into a specific type so that you can do something with it. 
