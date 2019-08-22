@@ -2,8 +2,8 @@
 For `froggyhugger` / Docs v1.0.0
 ## Basic programming constructs:
 #### Overarching ideas:
-__Selection:__ selection is the name for when a program has multiple paths that it can take, and must chose one of those paths. `if` statements are an example of selection.
-__Iteration:__ iteration is the name for when a program takes a chunk of code and repeatedly executes it until a certain condition is met. `while` loops and `for` loops are examples of iteration.
+__Selection:__ selection is the name for when a program has multiple paths that it can take, and must chose one of those paths. `if` statements are an example of selection.  
+__Iteration:__ iteration is the name for when a program takes a chunk of code and repeatedly executes it until a certain condition is met. `while` loops and `for` loops are examples of iteration.  
 
 ### 1. `if...else` statement:
 Syntax:
@@ -39,7 +39,7 @@ if (condition){
 }
 ```
 Explanation:
-This construct is useful if I have three things that can happen, and I only want one of them to happen. In reality, this is the same thing as:
+This construct is useful if I have three or more things that can happen, and I only want one of them to happen. In reality, this is the same thing as:
 ```javascript
 if (condition){
   // do thing 1
@@ -118,8 +118,8 @@ while (condition){
 }
 ```
 `while` loops are similar to `if` statements, but the difference between the two is that:
-__a)__ Once the program flow reaches a `while` loop, it checks if `condition` is true, and if so, repeatedly does thing 1 *until* `condition` *is false.* An `if` statement only checks once whether or not `condition` is true, and only does "thing 1" once, whereas a `while` loop does thing 1, checks if `condition` is true. If so, the process is repeated, until `condition` is false.
-__b)__ `while` loops don't have an `else` clause.
+__a)__ Once the program flow reaches a `while` loop, it checks if `condition` is true, and if so, repeatedly does thing 1 *until* `condition` *is false.* An `if` statement only checks once whether or not `condition` is true, and only does "thing 1" once, whereas a `while` loop does thing 1, checks if `condition` is true. If so, the process is repeated, until `condition` is false.  
+__b)__ `while` loops don't have an `else` clause.  
 
 ### 5. `for` loop:
 Syntax:
@@ -130,9 +130,9 @@ for (var variable_name = 0; variable_name > 10; variable_name++){
 ```
 Explanation:
 `for` loops are used to iterate over something. For example, the numbers 1-10 are iterable because I can count 1, 2, 3, 4... up to ten, and I know that I can get the next number in the series by adding one to the current number (1+1=2, 2+1=3, 3+1=4...). A basic `for` loop is broken up into 3 parts:
-__1.__ A variable is declared using the `var` keyword, and is assigned a value. This variable keeps track of where the loop is in terms of iterating. In the above `for` loop, a variable named `variable_name` is created, and assigned a value of 0.
-__2.__ The stop condition for the loop is given. In the above `for` loop, the loop stops when `variable_name` is greater than 10.
-__3.__ The rule for iterating is given. In the above `for` loop, the loop is told to increase `variable_name` by one each time the program flow returns to the beginning of the `for` loop.
+__1.__ A variable is declared using the `var` keyword, and is assigned a value. This variable keeps track of where the loop is in terms of iterating. In the above `for` loop, a variable named `variable_name` is created, and assigned a value of 0.  
+__2.__ The stop condition for the loop is given. In the above `for` loop, the loop stops when `variable_name` is greater than 10.  
+__3.__ The rule for iterating is given. In the above `for` loop, the loop is told to increase `variable_name` by one each time the program flow returns to the beginning of the `for` loop.  
 
 ### 6. `for...in` loop:
 Syntax:
