@@ -1,0 +1,8 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.506.0",
+    "sqlite3": "^4.0.9",
+    "discord.js": "11.5.1"
+  }
+}
