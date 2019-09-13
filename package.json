@@ -3,6 +3,9 @@
   "dependencies": {
     "discord.js": "11.5.1"
   },
+  "scripts": {
+    "start": "index.js"
+  },
   "engines": {
     "node": "10.16.0"
   }
