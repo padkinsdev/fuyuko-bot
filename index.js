@@ -1,32 +1,23 @@
-const Discord = require("discord.js")
-const client = new Discord.Client()
-//const fs = require("fs")
-//const path = require("path")
-const sql = require("sqlite3")
-const config = require("./data/config.json")
-const commands = require("./messageHandling/commands.js")
-const prep = require("./messageHandling/preprocess.js")
-const initial = require("./data/initialize.js")
+const Discord = require("discord.js");
+//const config = require("./config_bot.json");
 
-database = initial.init()
+const client = new Discord.Client();
 
-client.on("ready", function(){
-  console.log("Online and ready")
-});
+const prefix = "n.";
 
 client.on("message", message => {
   if (message.author.bot){
-    return null;
-  } else {
-    //prep.process(message)
-    if (message.content.startsWith(config.prefix)){
-      let command = message.content.split(' ')[0];
-      command = command.slice(config.prefix.length);
-      let args = message.content.split(' ').slice(1);
-      let cmd = commands.parseCommand(command);
-      cmd(message, args)
-    }
+    return Null;
+  } else if (message.content.startsWith(prefix)){
+    if (message.content == prefix + "avatar"){
+      message.channel.send(message.author.avatarURL);
+    } 
+    //message.channel.send("I am alive");
   }
 });
 
-client.login(process.env.token)
+client.on("ready", function (){
+  client.user.setPresence({game:{name: "Fae <3", type: "WATCHING"}, status: "online"});
+});
+
+client.login(process.env.token);
