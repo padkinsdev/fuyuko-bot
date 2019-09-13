@@ -7,7 +7,7 @@ const prefix = "n.";
 
 client.on("message", message => {
   if (message.author.bot){
-    return Null;
+    return;
   } else if (message.content.startsWith(prefix)){
     if (message.content == prefix + "avatar"){
       message.channel.send(message.author.avatarURL);
