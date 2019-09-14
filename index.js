@@ -11,7 +11,7 @@ client.on("message", message => {
   } else if (message.content.startsWith(prefix)){
     if (message.content == prefix + "avatar"){
       message.channel.send(message.author.avatarURL);
-    } else if (message.content == prefix + "avatar"){
+    } else if (message.content == prefix + "hello"){
       message.channel.send ("Hello, <@!" +message.author.id + ">");
     }
     //message.channel.send("I am alive");
