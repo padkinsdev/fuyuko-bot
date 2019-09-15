@@ -12,7 +12,10 @@ client.on("message", message => {
     if (message.content == prefix + "avatar"){
       message.channel.send(message.author.avatarURL);
     } else if (message.content.startsWith(prefix + "avatar")) {
-      message.channel.send(message.mentions.users.first().avatarURL);
+      let avuser = message.mentions.users.first();
+      if (avuser){
+        message.channel.send(avuser.avatarURL);
+      }
     } else if (message.content == prefix + "hello"){
       message.channel.send ("Hello, <@!" +message.author.id + ">");
     }
