@@ -12,7 +12,7 @@ client.on("message", message => {
     if (message.content == prefix + "avatar"){
       message.channel.send(message.author.avatarURL);
     } else if (message.content.startsWith(prefix + "avatar")) {
-      if (message.mentions.length() > 0){
+      if (message.mentions.length > 0){
         message.channel.send(message.mentions.users[0][1]);
       }
     } else if (message.content == prefix + "hello"){
