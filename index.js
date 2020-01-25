@@ -38,6 +38,7 @@ client.on("message", message => {
 });
 
 client.on("ready", function (){
+  console.log("Ready!");
   client.user.setPresence({game:{name: "Fae <3", type: "WATCHING"}, status: "online"});
 });
 
