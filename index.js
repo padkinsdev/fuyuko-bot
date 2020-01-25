@@ -15,7 +15,7 @@ client.on("message", message => {
     } else if (message.content.startsWith(prefix + "avatar")) {
       let avuser = message.mentions.users.first();
       if (avuser){
-        message.channel.send(avuser.avatarURL.slice(0, abuser.avatarURL.length-9));
+        message.channel.send(avuser.avatarURL.slice(0, avuser.avatarURL.length-9));
       }
     } else if (message.content == prefix + "hello"){
       message.channel.send ("Hello, <@!" +message.author.id + ">");
