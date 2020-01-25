@@ -11,11 +11,11 @@ client.on("message", message => {
     return;
   } else if (message.content.startsWith(prefix)){
     if (message.content == prefix + "avatar"){
-      message.channel.send(message.author.avatarURL.slice(0, message.author.avatarURL.length-9));
+      message.channel.send(message.author.avatarURL);//.slice(0, message.author.avatarURL.length-9));
     } else if (message.content.startsWith(prefix + "avatar")) {
       let avuser = message.mentions.users.first();
       if (avuser){
-        message.channel.send(avuser.avatarURL.slice(0, avuser.avatarURL.length-9));
+        message.channel.send(avuser.avatarURL);//.slice(0, avuser.avatarURL.length-9));
       }
     } else if (message.content == prefix + "hello"){
       message.channel.send ("Hello, <@!" +message.author.id + ">");
